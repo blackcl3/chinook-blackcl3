@@ -1,0 +1,1 @@
+SELECT InvoiceLine.InvoiceLineId, Track.Name, Artist.Name FROM InvoiceLine INNER JOIN Track on Track.trackId = InvoiceLine.TrackId, Album on Track.AlbumId = Album.AlbumId, Artist on Album.ArtistId = Artist.ArtistId ORDER BY InvoiceLine.InvoiceLineId
