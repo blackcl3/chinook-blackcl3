@@ -1,0 +1,1 @@
+SELECT DISTINCT BillingCountry FROM INVOICE ORDER BY BillingCountry

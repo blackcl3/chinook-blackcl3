@@ -1,0 +1,1 @@
+SELECT Invoice.Total, Customer.FirstName as CustomerFirstName, Customer.LastName as CustomerLastName, Employee.FirstName as EmployeeFirstName, Employee.LastName as EmployeeLastName FROM EMPLOYEE INNER JOIN Customer on Employee.EmployeeId = Customer.SupportRepId INNER JOIN Invoice on Customer.SupportRepId = Invoice.CustomerId
