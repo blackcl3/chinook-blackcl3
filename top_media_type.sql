@@ -10,3 +10,5 @@ GROUP BY
    MediaType.Name
 ORDER BY
    MediaTypeSold DESC
+LIMIT
+1
