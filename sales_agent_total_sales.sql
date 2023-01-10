@@ -1,0 +1,1 @@
+SELECT Employee.FirstName, Employee.LastName, SUM(Invoice.Total) as "Sales Total" FROM EMPLOYEE INNER JOIN Customer on Employee.EmployeeId = Customer.SupportRepId INNER JOIN Invoice on Customer.SupportRepId = Invoice.CustomerId GROUP BY Employee.EmployeeId
