@@ -4,7 +4,7 @@ SELECT
    Employee.LastName,
    SUM(Invoice.Total) 
 FROM Employee
-INNER JOIN Customer on Employee.EmployeeId = Customer.SupportRepId INNER JOIN Invoice on Customer.SupportRepId = Invoice.CustomerId
+INNER JOIN Customer on Employee.EmployeeId = Customer.SupportRepId INNER JOIN Invoice on Customer.CustomerId = Invoice.CustomerId
 WHERE InvoiceDate 
     BETWEEN '2009-01-01' AND '2009-12-31'
 GROUP BY
